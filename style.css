@@ -1,0 +1,298 @@
+/* General body styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title styling  */
+h1 {
+    font-family: 'Cursive', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    top: 30;
+    right: 55;
+    color: white;
+    position: relative;
+}
+
+/* Highlight 'X' in red for the title */
+h1 span {
+    color: red;
+    font-size: 4.3rem;
+}
+
+h1 span2 {
+    color: white;
+    font-size: 3rem;
+}
+
+/* Form container styling */
+form {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 0 55px rgba(255, 0, 0, 0.6);
+}
+
+/* Input field styling */
+form input[type="text"],
+form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-bottom: 2px solid red;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+/* Input hover and focus styling */
+form input:focus,
+form input:hover {
+    outline: none;
+    border-bottom: 2px solid white;
+}
+
+/* Button styling */
+form button {
+    background-color: red;
+    border: 2px solid black;
+    padding: 12px 25px;
+    color: #1c1c1c;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0 15px red; /* Glowing red effect */
+    overflow-wrap: break-word; /* Handles long words or URLs */
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+form button:hover {
+    background-color: #ff4040;
+    color: red; /* Change text color on hover */
+    transform: scale(1.05);
+    border-color: darkred;
+}
+
+form button2 {
+    background-color: #1c1c1c; /* Button background color */
+    border: 2px solid red; /* Red-colored square border */
+    padding: 12px 25px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0 15px red; /* Glowing red effect */
+    overflow-wrap: break-word; /* Handles long words or URLs */
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+form button2:hover {
+    background-color: #1c1c1c; /* Retain background color on hover */
+    color: red; /* Change text color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    border-color: darkred; /* Darker red border on hover */
+}
+
+button {
+    background-color: red;
+    border: 2px solid black;
+    padding: 12px 25px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff4040;
+    transform: scale(1.05);
+    border-color: darkred;
+}
+
+/* Top-right corner triangle style */
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    z-index: -1;
+}
+
+/* Links for trouble in login */
+form a {
+    display: block;
+    color: red;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+form a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .password-container {
+            display: flex;
+            align-items: center;
+        }
+        .password-container input {
+            flex: 1;
+        }
+        .password-container i {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+        /* for m3u url square box */
+        p {
+    display: inline-block;
+    word-wrap: break-word; /* Ensures the URL wraps within the box */
+    width: 18em; /* Horizontal size */
+    height: 5.5em; /* Vertical size */
+    padding: 10px; /* Adds space inside the box for better visibility */
+    border: 2px solid red; /* Red border */
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: #1c1c1c; /* White background for contrast */
+    color: white; /* Text color for readability */
+    box-shadow: 0 0 15px red; /* Glowing red effect */
+    font-size: 15px; /* Adjust font size as needed */
+    overflow-wrap: break-word; /* Handles long words or URLs */
+    overflow: hidden; /* Ensures content doesn't overflow */
+    white-space: pre-wrap; /* Preserves line breaks and spacing */
+}
+
+/* Profile button and popup */
+.profile-icon {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.profile-icon:hover {
+    color: red;
+}
+
+.profile-popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    right: 20px;
+    width: 300px;
+    background-color: #1c1c1c;
+    border: 2px solid red;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+/* Popup header styling */
+.popup-header {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+}
+
+.login-form input, .account-details button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        .switch-btn {
+            margin-top: 10px;
+        }
+
+        .profile-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .profile-list li {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+
+        .material-icons {
+            vertical-align: middle;
+        }
+        
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+    
+/* Account items in the popup */
+.account-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid #333;
+}
+
+.account-item:last-child {
+    border-bottom: none;
+}
+
+/* Remove account button */
+.remove-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.remove-btn:hover {
+    color: white;
+}
